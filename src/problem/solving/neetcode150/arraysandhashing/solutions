@@ -1,0 +1,8 @@
+Brute-force: Time - O(n2), Space - O(1)
+Comparing each element i with other elements of array until n
+
+Sort: Time - O(n*Log-n), Space - O(1)
+Comparing the adjacent elements in a sorted array until n
+
+HashSet: Time - O(n), Space - O(n)
+Check for duplicates if the element i exists in a HashSet, else add to it.

@@ -1,0 +1,6 @@
+BruteForce: Time - O(n2), Space - O(1)
+Iterate over the array, verify if the sum of i-th element + j-th element matches the target.
+
+HashMap: Time - O(n), Space - O(n)
+Check if the difference of current element from the target (i.e. target - element[i]) is available in hashmap(element[], index),
+else add the (element, index) to the map after visiting.
