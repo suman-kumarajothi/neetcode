@@ -52,6 +52,9 @@ problem-solving.neetcode150/
 
 ---
 
+## Roadmap
+![img.png](img.png)
+---
 ## 🔍 Category Tracker
 
 - [x] Arrays & Hashing
@@ -70,15 +73,7 @@ problem-solving.neetcode150/
 - [ ] Advanced Graphs
 - [ ] 1D/2D DP
 
----
-
-## 📅 Timeline
-
-**Start Date**: June 6, 2025  
-**Target Completion**: August 7, 2025  
-**Approach**: Consistency, clarity, and clean code-first thinking.
-
----
+---ß
 
 ## 🤝 Contributions
 
