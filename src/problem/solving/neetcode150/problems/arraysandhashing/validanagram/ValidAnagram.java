@@ -1,17 +1,19 @@
-package problem.solving.neetcode150.validanagram;
+package problem.solving.neetcode150.problems.arraysandhashing.validanagram;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
-public class ValidAnagram {
+public class ValidAnagram
+{
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         System.out.println(new ValidAnagram().isAnagram("bbcc", "ccbc"));
     }
 
-    public boolean isAnagram(String s, String t) {
-
+    public boolean isAnagram(final String s, final String t)
+    {
         if ((s == null || s.isEmpty()) || (t == null || t.isEmpty()) || s.length() != t.length())
         {
             return false;
@@ -27,14 +29,13 @@ public class ValidAnagram {
 
     private void mapCharCount(final Map<Character, Integer> charCountMap, char[] charArray)
     {
-        for (char character: charArray)
+        for (char character : charArray)
         {
             int charCountInCache = charCountMap.getOrDefault(character, 0);
             if (charCountInCache > 0)
             {
                 charCountMap.put(character, charCountInCache + 1);
-            }
-            else
+            } else
             {
                 charCountMap.put(character, 1);
             }
@@ -43,9 +44,9 @@ public class ValidAnagram {
 
     private boolean compareCharCountMap(Map<Character, Integer> sCharCountMap, Map<Character, Integer> tCharCountMap)
     {
-        for(char character: sCharCountMap.keySet())
+        for (char character : sCharCountMap.keySet())
         {
-            if (!Objects.equals(tCharCountMap.get(character), sCharCountMap.get(character)))
+            if (! Objects.equals(tCharCountMap.get(character), sCharCountMap.get(character)))
             {
                 return false;
             }

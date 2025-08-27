@@ -1,15 +1,18 @@
-package problem.solving.neetcode150.arraysandhashing;
+package problem.solving.neetcode150.problems.arraysandhashing.containsduplicate;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class ContainsDuplicate {
-    public static void main(String[] args) {
+public class ContainsDuplicate
+{
+    public static void main(String[] args)
+    {
         int[] nums = new int[]{1, 2, 3, 3};
         System.out.println(new ContainsDuplicate().hasDuplicate(nums));
     }
 
-    public boolean hasDuplicate(int[] nums) {
+    public boolean hasDuplicate(final int[] nums)
+    {
 
         if (nums == null || nums.length <= 1)
         {
@@ -18,13 +21,12 @@ public class ContainsDuplicate {
 
         Set<Integer> cache = new HashSet<>();
 
-        for (int num: nums)
+        for (int num : nums)
         {
             if (cache.contains(num))
             {
                 return true;
-            }
-            else
+            } else
             {
                 cache.add(num);
             }

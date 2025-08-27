@@ -1,0 +1,5 @@
+BruteForce: Time - O(m*n), Space - O(m)
+Iter 1st pass: over the array of string and construct a char-count map.
+Iter 2nd pass: over the array for every ith element check if the jth element has equivalent char-count map
+            If yes group them and reassign the jth element into empty string to skip processing on ith iteration.
+
