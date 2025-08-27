@@ -1,7 +1,7 @@
-Sort: Time - O(n*Log-n), Space - O(1)
-Sort both the string in their alphabetical order and iterate through the sorted strings and compare the i-th element.
+1. Sort: Time - O(n*Log-n), Space - O(1)
+    - Sort both the string in their alphabetical order and iterate through the sorted strings and compare the i-th element.
 
-HashMap: Time - O(n), Space - O(S + T)
-Store the count of chars in each of the given strings into a map and compare the charCountMap one over the other.
+2. HashMap: Time - O(n), Space - O(S + T)
+    - Store the count of chars in each of the given strings into a map and compare the charCountMap one over the other.
 
 

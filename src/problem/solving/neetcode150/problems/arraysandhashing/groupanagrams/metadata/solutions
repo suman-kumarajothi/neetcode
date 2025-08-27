@@ -1,5 +1,10 @@
-BruteForce: Time - O(m*n), Space - O(m)
-Iter 1st pass: over the array of string and construct a char-count map.
-Iter 2nd pass: over the array for every ith element check if the jth element has equivalent char-count map
-            If yes group them and reassign the jth element into empty string to skip processing on ith iteration.
+1. BruteForce: Time - O(m*(n*Log-n)), Space - O(n)
+    - Create a copy inputList and sort each string lexicographically
+    - Iterate over the list of lexicographically sortedInputList and compare i-th and j-th element, check for equivalence
+        If yes add the str from original unsorted arr into a group
+
+2. Caching: Time - O(m*n), Space - O(m)
+    - Iter 1st pass: over the array of string and construct a char-count map.
+    - Iter 2nd pass: over the array for every i-th element check if the j-th element has equivalent char-count map
+        If yes group them and reassign the j-th element into empty string to skip processing on ith iteration.
 
