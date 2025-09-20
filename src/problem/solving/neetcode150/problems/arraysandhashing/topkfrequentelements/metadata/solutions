@@ -1,0 +1,14 @@
+1. TreeMap: Time – O(n + m log m), Space – O(m + k)
+    - Iterate over the numbers array to create a map of number → frequency.
+    - Insert each element into a TreeMap keyed by frequency (reverse order).
+    - Traverse the TreeMap from highest frequency to lowest, and collect the first k elements.
+2. Heap: Time – O(n + m log k), Space – O(m + k)
+    - Iterate over the numbers array to create a map of number → frequency.
+    - Use a min-heap of size k to keep only the k most frequent elements.
+    - For each entry in the frequency map, push into the heap; if heap size > k, remove the smallest.
+    - At the end, extract elements from the heap as the result.
+3. Bucket Sort: Time – O(n)
+    - Space – O(n)
+    - Iterate over the numbers array to create a map of number → frequency.
+    - Create a bucket array bucket[f] where index f holds all elements that appear f times.
+    - Traverse the bucket array backwards (from highest possible frequency down) and collect elements until k are gathered.
