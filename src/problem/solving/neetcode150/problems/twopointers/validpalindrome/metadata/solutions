@@ -1,0 +1,4 @@
+1. Two Pointers: Time - O(n), Space - O(1)
+    - Reconstruct the input s into alphanumeric alphanumeric String.
+    - Do a case in-sensitive equals check on each character, from the start and end of the input string simultaneously.
+    - If not equals return false, else true.
