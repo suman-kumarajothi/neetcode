@@ -1,0 +1,3 @@
+1. Dynamic Programming: Time - O(1), Space - O(1)
+    - Iterate over the provided prices, compute the last known smallest price as buy price & with current price as sell price.
+    - If current is higher then check profit with max profit, else adjust the buy price and continue with other comparisons.
