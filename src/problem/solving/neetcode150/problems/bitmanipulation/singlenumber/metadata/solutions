@@ -1,0 +1,2 @@
+Using XOR: Time - O(n), Space - O(1)
+    - Iterate over the elements of the array and perform bitwise XOR operation and return the result.
