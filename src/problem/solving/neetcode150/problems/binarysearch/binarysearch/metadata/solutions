@@ -1,0 +1,5 @@
+Binary Search: Time - O(n log-n), Space - O(1)
+    - In the sorted array, initialize low, high element and mid element = (low + high)/2
+    - Compare the middle element with target element,
+    - If target element is lesser, then traverse to the left and follow step-1
+    - Else traverse to the right, re-assign low, mid, high
