@@ -1,0 +1,5 @@
+Iteration: Time - O(n), Space - O(n)
+    - From the least significant element, add one similar to manual addition and move forward the carry
+    - If value > 9, mark carry forward true, move to left,
+    - If carry is true, increment the current element
+    - After iteration of digits, if carry is still true, add prefix 1 to the output, else return updated digits as output
