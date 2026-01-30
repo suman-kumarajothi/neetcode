@@ -1,0 +1,5 @@
+Recursion: Time - O(n), Space - O(n)
+    - recursively call a reverse method passing head.next and reversal List Node reference
+    - base case: if node.next is null, update the reversal node with value from head node and return it
+    - recursive call: upon stack un-wind store the returned node in temp variable
+    - tail call: update the temp reverse node's next ref with ListNode containing the val of head node
