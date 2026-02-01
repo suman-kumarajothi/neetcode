@@ -1,0 +1,5 @@
+Binary Search: Time - O(n), Space - O(1)
+    - Since it is sorted array, start with the sum of edge elements in array [low-0, high-n]
+    - If the sum > target, decrease the higher index n--
+    - else increase the lower index i++
+    - Once their sum = target, return their indices with 1 added, in an array.
