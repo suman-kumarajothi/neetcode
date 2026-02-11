@@ -1,0 +1,3 @@
+BruteForce: Time - O(n+m), Space - O(n+m)
+    - If head of either of the list is null, return the head of other list.
+    - Compare the head of both lists and add it to the new list.
