@@ -1,0 +1,8 @@
+Brute Force: Time - O(n^2), Space - O(n^2)
+    - Build 2-stages of validation (row, column) and (sub-boxes) and use hashset to store duplicates
+    - Stage 1: (row/column validation)
+        - From the current element sweep through the entire row/column for duplicates
+        - Once current row/column validated, increment row/column by 1 and do full sweep again (towards either sides)
+    - Stage 2: (sub-boxes validation)
+        - Split the grid into 3 batches, for row 0, asses 3x3 sub-boxes
+        - Increment the row +3 to move onto the next batches
