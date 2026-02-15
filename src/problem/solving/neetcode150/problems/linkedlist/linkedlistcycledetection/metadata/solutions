@@ -1,0 +1,5 @@
+Two Pointer: Time - O(n*log(n)) Space - O(1)
+    - If the head is null return false.
+    - Create two references to the head - a slow pointer(node.next) and a fast pointer(node.next.next)
+    - Iterate over the elements and check if the two pointers meet(having same element ref).
+    - Return true if both pointers are not null and points to the same element ref, else false.
