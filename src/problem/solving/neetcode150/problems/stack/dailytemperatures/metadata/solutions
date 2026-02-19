@@ -1,0 +1,5 @@
+Monotonic decreasing stack: Time - O(n), Space - O(n)
+    - Iterate through the input arr and add elements as a pair (temperature, index) to the stack.
+    - If curr temperature is greater than the stack's top element, update the temperatures array with difference in their indices.
+    - Else add the element to the stack, until the input array is fully iterated.
+    - Check if any un-processed elements are available in the stack and update the value as 0, in their corresponding indices.
