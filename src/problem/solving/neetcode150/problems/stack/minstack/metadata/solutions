@@ -1,0 +1,5 @@
+Prefix Minimum Stack: Time - O(1), Space - O(n)
+    - Maintain a main stack and auxiliary min stack
+    - Main stack retains the pushed elements
+    - Min stack maintains the min value available at the time an element is pushed to main stack
+    - While popping an element from main stack, remove from the auxiliary stack too

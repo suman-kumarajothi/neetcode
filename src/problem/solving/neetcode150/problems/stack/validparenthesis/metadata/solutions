@@ -1,4 +1,4 @@
-1. Data Structure: : Time - O(1), Space - O(n)
+1. Data Structure: Time - O(1), Space - O(n)
    - Create a char map of opening closing parenthesis.
    - Iterate over the char elements and check stack for following,
      If top most element matches the inversion braces of current char, pop the element from stack
