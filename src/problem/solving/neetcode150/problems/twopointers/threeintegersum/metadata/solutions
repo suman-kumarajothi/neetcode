@@ -1,0 +1,5 @@
+Two Pointers: Time - O(n^2) * log n, Space - O(n)
+    - Sort the input array
+    - For every i-th element + j-th element, find the delta k from triplet target - 0 (i.e. k = -(i+j))
+    - Do a Binary search for the k-th element in the sorted array.
+    - Cache the triplet to identify and remove any duplicates if formed again.
