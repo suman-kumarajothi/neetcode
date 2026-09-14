@@ -1,0 +1,9 @@
+Brute Force: Time - O(n^2), Space - O(1)
+    - Iterate over the list from both left and right
+    - compute the width and heigh for every possible pairs
+    - return the maxArea computed for a pair which has the highest yeild
+Two Pointers: Time - O(n), Space - O(1)
+    - Initialize a left and right pointer at the extreme ends
+    - calculate the area of elements at the pointer indexes
+    - If the element at left pointer index less than or equals the element at right pointer index
+      increment left pointer by 1, else decrement the right pointer by 1 (move inward) until all the elements are traversed.
