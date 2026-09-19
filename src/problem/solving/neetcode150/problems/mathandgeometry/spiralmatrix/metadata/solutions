@@ -1,0 +1,6 @@
+Two Pointers: Time - O(m*n), Space - O(1)
+  - Use rowStart, rowEnd, columnStart, and columnEnd to define the current matrix boundaries.
+  - Use four booleans (right, down, left, up) to track the current traversal direction.
+  - Traverse right across the top row, then down the right column, left across the bottom row, and up the left column.
+  - After each traversal, shrink the corresponding boundary and switch to the next direction.
+  - Repeat until all elements within the boundaries are traversed.
