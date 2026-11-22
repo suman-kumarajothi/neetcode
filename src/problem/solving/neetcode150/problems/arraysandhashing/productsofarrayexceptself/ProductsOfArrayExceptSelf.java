@@ -16,7 +16,29 @@ public class ProductsOfArrayExceptSelf
                 " but got " + Arrays.toString(output);
         System.out.println(Arrays.toString(output));
     }
-    public int[] productExceptSelf(int[] nums) {
+
+    public int[] productExceptSelf(int[] nums)
+    {
+        int[] result = new int[nums.length];
+
+        //prefix product array
+        int prefix = 1;
+        for (int i = 0; i < nums.length; i++)
+        {
+            result[i] = prefix;
+            prefix *= nums[i];
+        }
+        //suffix product array:
+        int suffix = 1;
+        for (int i = nums.length - 1; i >= 0; i--)
+        {
+            result[i] *= suffix;
+            suffix *= nums[i];
+        }
+        return result;
+    }
+
+    public int[] productExceptSelfWithDivision(int[] nums) {
         int product = 1;
         int zeroOccurenceCount = 0;
         for (int num: nums)

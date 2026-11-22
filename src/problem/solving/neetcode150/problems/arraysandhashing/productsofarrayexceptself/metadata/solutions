@@ -2,3 +2,6 @@
    - In the past pass, iterative over the provided nums array and find the product of non-zero elements.
    - In the second pass, divide the product obtained by each number
    Note: if any of the element is negative the resultant product value in output[i] maybe negative or 0 accordingly.
+
+2. Prefix-Suffix + HashMap: Time - O(n), Space - O(n)
+   - Create a prefix and suffix product array
