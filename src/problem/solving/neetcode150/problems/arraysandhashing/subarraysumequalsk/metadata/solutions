@@ -1,0 +1,4 @@
+1. PrefixSum + Hash: Time – O(n), Space – O(n)
+    - Iterate over the numbers array to create a prefix sum map with frequency. Note: prefix sum will be initialized with (0, 1)
+    - Required Sum = Current Sum - K, if map contains needed sum, increment counter by frequency.
+    - Update the map with (current Sum, frequency)
