@@ -1,0 +1,5 @@
+Sorting: Time - O(1), Space - O(1)
+    - Sort the meeting intervals based on their start time.
+    - Iterate over the intervals and compare the start-time of current element and end time of previous element.
+    - If (currentStartTime < previousEndTime) conflict exists, return false;
+    - else If the meeting intervals null, empty or (currentStartTime > previousStartTime) for all interval, return true.
