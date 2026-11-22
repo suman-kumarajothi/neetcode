@@ -1,0 +1,5 @@
+Sorting: Time - O(1), Space O(n)
+    - Sort the intervals based on their starting time.
+    - Iterate over the intervals and compare the start-time of current element and end time of previous element.
+    - If (currentStartTime <= previousEndTime) merge interval (previousStartTime, max(previousEndTime, currentEndTime))
+    - Else add the current interval to result.
