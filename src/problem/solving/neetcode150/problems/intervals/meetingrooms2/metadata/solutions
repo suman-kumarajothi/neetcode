@@ -1,0 +1,5 @@
+Sorting + Heap: Time - O(1), Space - O(n)
+    - Sort the meeting intervals based on their start time and create a heap (priority queue) to store the meeting end times.
+    - Iterate over the intervals and check (meeting.starttime >= previous-meeting endtime)
+    - If true, reuse the meeting room, else add the meeting end time to heap.
+    - finally return the no of meeting rooms required by returning the heap size.
